@@ -6,15 +6,74 @@
         "core": {
           "dependencies": [
             {
+              "argonaut-codecs": ">=9.0.0 <10.0.0"
+            },
+            {
+              "argonaut-core": ">=7.0.0 <8.0.0"
+            },
+            {
+              "console": ">=6.1.0 <7.0.0"
+            },
+            {
               "effect": ">=4.0.0 <5.0.0"
+            },
+            {
+              "js-date": ">=8.0.0 <9.0.0"
             },
             {
               "prelude": ">=3.0.0 <7.0.0"
             }
           ],
           "build_plan": [
+            "argonaut-codecs",
+            "argonaut-core",
+            "arrays",
+            "bifunctors",
+            "console",
+            "const",
+            "contravariant",
+            "control",
+            "datetime",
+            "distributive",
             "effect",
-            "prelude"
+            "either",
+            "enums",
+            "exceptions",
+            "exists",
+            "foldable-traversable",
+            "foreign",
+            "foreign-object",
+            "functions",
+            "functors",
+            "gen",
+            "identity",
+            "integers",
+            "invariant",
+            "js-date",
+            "lazy",
+            "lists",
+            "maybe",
+            "newtype",
+            "nonempty",
+            "now",
+            "numbers",
+            "ordered-collections",
+            "orders",
+            "partial",
+            "prelude",
+            "profunctor",
+            "record",
+            "refs",
+            "safe-coerce",
+            "st",
+            "strings",
+            "tailrec",
+            "transformers",
+            "tuples",
+            "type-equality",
+            "typelevel-prelude",
+            "unfoldable",
+            "unsafe-coerce"
           ]
         },
         "test": {
