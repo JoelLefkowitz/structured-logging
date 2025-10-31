@@ -3,8 +3,8 @@ module Test.Main where
 import Prelude
 
 import Effect (Effect)
-import Node.Logging.LogLevel (LogLevel(..))
-import Node.Logging.LogLine (note)
+import Node.Logger.LogLevel (LogLevel(..))
+import Node.Logger.LogLine (note)
 import Test.Spec (describe, it)
 import Test.Spec.Assertions (shouldEqual)
 import Test.Spec.Reporter (consoleReporter)

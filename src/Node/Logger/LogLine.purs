@@ -1,4 +1,4 @@
-module Node.Logging.LogLine where
+module Node.Logger.LogLine where
 
 import Prelude
 
@@ -6,7 +6,7 @@ import Data.Argonaut.Core (jsonEmptyObject, stringify)
 import Data.Argonaut.Encode ((:=), (~>))
 import Data.JSDate (now, toISOString)
 import Effect.Class (class MonadEffect, liftEffect)
-import Node.Logging.LogLevel (LogLevel)
+import Node.Logger.LogLevel (LogLevel)
 
 type LogLine =
   { timestamp ∷ String
@@ -16,9 +16,9 @@ type LogLine =
 
 format ∷ LogLine → String
 format { timestamp, level, message } = stringify
-  $ "timestamp" := timestamp
+  $ "message" := message
       ~> "level" := show level
-      ~> "message" := message
+      ~> "timestamp" := timestamp
       ~> jsonEmptyObject
 
 note ∷ ∀ m. MonadEffect m ⇒ LogLevel → String → m LogLine

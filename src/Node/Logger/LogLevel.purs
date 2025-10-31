@@ -1,4 +1,4 @@
-module Node.Logging.LogLevel where
+module Node.Logger.LogLevel where
 
 import Prelude
 

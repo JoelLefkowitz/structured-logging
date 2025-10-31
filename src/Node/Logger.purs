@@ -1,11 +1,11 @@
-module Node.Logging.Logger where
+module Node.Logger where
 
 import Prelude
 
 import Effect.Class (class MonadEffect)
 import Effect.Class.Console as Console
-import Node.Logging.LogLevel (LogLevel(..))
-import Node.Logging.LogLine (format, note)
+import Node.Logger.LogLevel (LogLevel(..))
+import Node.Logger.LogLine (format, note)
 
 info ∷ ∀ m. MonadEffect m ⇒ String → m Unit
 info =
