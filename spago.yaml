@@ -1,0 +1,31 @@
+package:
+  name: structured-logging
+  description: Log with timestamps and levels.
+
+  publish:
+    version: 0.1.0
+    license: MIT
+    location:
+      githubOwner: joellefkowitz
+      githubRepo: structured-logging
+
+  dependencies:
+    - effect: ">=4.0.0 <5.0.0"
+    - prelude: ">=3.0.0 <7.0.0"
+
+  build:
+    pedanticPackages: true
+    strict: true
+
+  test:
+    main: Test.Main
+    dependencies:
+      - spec
+      - spec-node
+
+workspace:
+  packageSet:
+    registry: 62.3.1
+
+  buildOpts:
+    statVerbosity: "no-stats"
