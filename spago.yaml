@@ -3,7 +3,7 @@ package:
   description: Log with timestamps and levels.
 
   publish:
-    version: 0.1.0
+    version: 1.0.0
     license: MIT
     location:
       githubOwner: joellefkowitz
